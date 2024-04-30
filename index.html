@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zippy-online-compressor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Roboto_Slab'] bg-gray-100">
+  <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-center mb-4">zippy-online-compressor</h1>
+    <p class="text-lg text-center mb-8">A user-friendly web application for compressing and decompressing files online.</p>
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-bold mb-4">File Compression</h2>
+      <div class="mb-4">
+        <label for="file-input" class="block font-medium mb-2">Select a file to compress:</label>
+        <input type="file" id="file-input" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="compression-level" class="block font-medium mb-2">Compression Level:</label>
+        <input type="range" id="compression-level" min="0" max="100" value="50" class="w-full">
+      </div>
+      <button id="compress-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md">Compress</button>
+    </div>
+    <div class="bg-white shadow-md rounded-lg p-6 mt-8">
+      <h2 class="text-2xl font-bold mb-4">File Decompression</h2>
+      <div class="mb-4">
+        <label for="compressed-file-input" class="block font-medium mb-2">Select a compressed file to decompress:</label>
+        <input type="file" id="compressed-file-input" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <button id="decompress-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md">Decompress</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html> <html lang="zh"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>解压 - zippy-online-compressor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Open Sans'] bg-gray-100">
+  <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <a href="../index.html" class="text-2xl font-bold text-gray-800">zippy-online-compressor</a>
+    <nav>
+      <a href="compression.html" class="text-gray-600 hover:text-gray-800 mr-4">压缩</a>
+      <a href="decompression.html" class="text-gray-600 hover:text-gray-800">解压</a>
+    </nav>
+  </header>
+  
+  <main class="container mx-auto py-8 px-4">
+    <section class="mb-8">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">解压文件</h1>
+      <p class="text-gray-600 text-lg">在这里您可以从压缩档案中提取文件和文件夹。</p>
+    </section>
+    
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">如何解压</h2>
+      <ol class="list-decimal list-inside text-gray-600 text-lg">
+        <li>点击"选择压缩文件"按钮选择要解压的文件</li>
+        <li>输入解压后的文件夹名称</li>
+        <li>点击"解压"按钮开始解压</li>
+        <li>下载解压后的文件</li>
+      </ol>
+    </section>
+    
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">解压选项</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="compressed-file" class="block text-gray-800 font-bold mb-2">选择压缩文件</label>
+          <input type="file" id="compressed-file" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="extract-folder" class="block text-gray-800 font-bold mb-2">解压后的文件夹名称</label>
+          <input type="text" id="extract-folder" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md" onclick="decompressFile(document.getElementById('compressed-file').files[0], document.getElementById('extract-folder').value)">解压</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <p>&copy; 2023 zippy-online-compressor. All rights reserved.</p>
+    <nav>
+      <a href="#" class="text-gray-300 hover:text-white mr-4">联系我们</a>
+      <a href="#" class="text-gray-300 hover:text-white">隐私政策</a>
+    </nav>
+  </footer>
+  
+  <script src="../script.js"></script>
+</body> </html>

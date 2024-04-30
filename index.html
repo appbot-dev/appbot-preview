@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zippy-online-compressor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Roboto_Slab'] bg-gray-100">
+  <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">zippy-online-compressor</h1>
+    <p class="text-lg text-gray-700 mb-8">A user-friendly web application for compressing and decompressing files online.</p>
+    <div class="bg-white shadow-md rounded-lg p-6 sm:p-8 lg:p-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Compress or Decompress Files</h2>
+      <div class="flex flex-col sm:flex-row items-center justify-between mb-8">
+        <input type="file" id="file-input" class="block w-full sm:w-auto mb-4 sm:mb-0 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        <button id="compress-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mr-4">Compress</button>
+        <button id="decompress-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md">Decompress</button>
+      </div>
+      <div id="result-container" class="hidden">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Result:</h3>
+        <div id="result-content" class="bg-gray-100 p-4 rounded-md"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

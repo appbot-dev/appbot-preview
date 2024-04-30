@@ -1,0 +1,46 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vibrant-marketplace-venture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab']">
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">vibrant-marketplace-venture</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#" id="search-btn">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container mx-auto py-8">
+    <section class="mb-8">
+      <h2 class="text-3xl font-bold mb-4">Welcome to vibrant-marketplace-venture</h2>
+      <p class="text-gray-600">Create an engaging online marketplace website for buyers and sellers to connect and trade goods or services.</p>
+    </section>
+    
+    <section>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-3xl font-bold">Browse Products</h2>
+        <div class="flex items-center">
+          <input type="text" placeholder="Search products..." class="input input-bordered mr-2" id="search-input">
+          <button class="btn btn-primary" id="search-btn">Search</button>
+        </div>
+      </div>
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Product cards will be dynamically generated here -->
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+  <script src="search.js"></script>
+</body> </html>

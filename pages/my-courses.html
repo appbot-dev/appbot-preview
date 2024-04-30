@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Courses - Enlighten Learners Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab']">
+  <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold">Enlighten Learners Platform</div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="../index.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="course-catalog.html" class="hover:text-gray-400">Course Catalog</a></li>
+        <li><a href="my-courses.html" class="hover:text-gray-400">My Courses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="py-12 px-6">
+    <section class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold mb-4">My Courses</h1>
+      <div class="mb-8">
+        <input type="text" placeholder="Search my courses..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/random/900x700/?course" alt="Course Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Introduction to Programming</h3>
+            <div class="flex justify-between items-center mb-4">
+              <div class="text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="text-gray-600">75% Complete</div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Submit Assignment</button>
+              <button class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Contact Instructor</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more enrolled course cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p>&copy; 2023 Enlighten Learners Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body> </html>

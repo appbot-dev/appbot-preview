@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Listing - Auto Mart Web Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="font-['Roboto Slab']">
+  <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold">Auto Mart Web Showcase</div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="../index.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="vehicle-listing.html" class="hover:text-gray-400">Vehicle Listing</a></li>
+        <li><a href="financing-options.html" class="hover:text-gray-400">Financing Options</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="py-12 px-6">
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Vehicle Listing</h2>
+      <p class="text-gray-600">Browse and search for available vehicles with detailed specifications and pricing.</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="vehicle-listing-container">
+      <!-- Vehicle cards will be dynamically generated here -->
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6 text-center">
+    <p>&copy; 2023 Auto Mart Web Showcase. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

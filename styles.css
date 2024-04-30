@@ -1,0 +1,4 @@
+/* Additional custom styles can be added here */
+.hover\:bg-gray-700:hover {
+  background-color: #374151;
+}

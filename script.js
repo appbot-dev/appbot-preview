@@ -1,0 +1,1 @@
+// IndexedDB or localStorage code to manage course data // JavaScript logic for interactive features, such as search, filter, and sort // Functions to handle course enrollment, progress tracking, and instructor interaction

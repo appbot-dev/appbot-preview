@@ -1,0 +1,65 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enlighten Learners Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab']">
+  <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold">Enlighten Learners Platform</div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="pages/course-catalog.html" class="hover:text-gray-400">Course Catalog</a></li>
+        <li><a href="pages/my-courses.html" class="hover:text-gray-400">My Courses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="py-12 px-6">
+    <section class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Enlighten Learners Platform</h1>
+      <p class="text-gray-600 mb-8">An online platform for learners to access educational courses and resources.</p>
+      <a href="pages/course-catalog.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded">Explore Courses</a>
+    </section>
+
+    <section class="my-16">
+      <h2 class="text-3xl font-bold mb-4">Featured Courses</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/random/900x700/?course" alt="Course Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Introduction to Programming</h3>
+            <p class="text-gray-600 mb-4">Learn the fundamentals of programming with Python.</p>
+            <a href="pages/course-catalog.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Enroll Now</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/random/900x700/?online-course" alt="Course Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Data Science Essentials</h3>
+            <p class="text-gray-600 mb-4">Explore the fundamentals of data science and machine learning.</p>
+            <a href="pages/course-catalog.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Enroll Now</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/random/900x700/?education" alt="Course Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Digital Marketing Fundamentals</h3>
+            <p class="text-gray-600 mb-4">Learn the essential skills for effective digital marketing.</p>
+            <a href="pages/course-catalog.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p>&copy; 2023 Enlighten Learners Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body> </html>

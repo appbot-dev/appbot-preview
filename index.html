@@ -1,0 +1,46 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efficient Task Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Lato'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-['Roboto_Slab'] font-bold">Efficient Task Tracker</h1>
+    <nav>
+      <a href="pages/todo.html" class="mr-4 hover:text-gray-300">To-Do List</a>
+      <a href="pages/calendar.html" class="hover:text-gray-300">Calendar View</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-8">
+    <section class="mb-8">
+      <h2 class="text-2xl font-['Roboto_Slab'] font-bold mb-4">Welcome to Efficient Task Tracker</h2>
+      <p class="text-gray-600">A user-friendly web application for managing and organizing tasks effectively.</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <img src="https://source.unsplash.com/random/900x700/?task" alt="Task Management" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-['Roboto_Slab'] font-bold mt-4">To-Do List</h3>
+        <p class="text-gray-600">Create, view, edit, and delete tasks in a simple and organized manner.</p>
+        <a href="pages/todo.html" class="text-blue-500 hover:text-blue-700 font-bold">Learn More</a>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/random/900x700/?calendar" alt="Calendar View" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-['Roboto_Slab'] font-bold mt-4">Calendar View</h3>
+        <p class="text-gray-600">View tasks in a calendar format for better time management and scheduling.</p>
+        <a href="pages/calendar.html" class="text-blue-500 hover:text-blue-700 font-bold">Learn More</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <p>&copy; 2023 Efficient Task Tracker. All rights reserved.</p>
+    <p>Powered by Tailwind CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body> </html>

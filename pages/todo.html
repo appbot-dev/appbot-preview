@@ -1,0 +1,57 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List | Efficient Task Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Lato'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <a href="../index.html" class="font-['Roboto_Slab'] text-2xl font-bold">Efficient Task Tracker</a>
+    <nav>
+      <a href="todo.html" class="mr-4 hover:text-gray-300 font-bold">To-Do List</a>
+      <a href="calendar.html" class="hover:text-gray-300">Calendar View</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-8">
+    <section class="mb-8">
+      <h2 class="text-2xl font-['Roboto_Slab'] font-bold mb-4">To-Do List</h2>
+      <p class="text-gray-600">Create, view, edit, and delete tasks in a simple and organized manner.</p>
+    </section>
+
+    <section>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-['Roboto_Slab'] font-bold mb-4">Add a New Task</h3>
+        <form id="task-form" class="mb-4">
+          <div class="mb-4">
+            <label for="task-title" class="block font-bold mb-2">Task Title</label>
+            <input type="text" id="task-title" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="task-description" class="block font-bold mb-2">Task Description</label>
+            <textarea id="task-description" rows="3" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+          </div>
+          <div class="mb-4">
+            <label for="task-due-date" class="block font-bold mb-2">Due Date</label>
+            <input type="date" id="task-due-date" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md">Add Task</button>
+        </form>
+
+        <h3 class="text-xl font-['Roboto_Slab'] font-bold mb-4">Task List</h3>
+        <div id="task-list" class="space-y-4">
+          <!-- Tasks will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <p>&copy; 2023 Efficient Task Tracker. All rights reserved.</p>
+    <p>Powered by Tailwind CSS</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body> </html>

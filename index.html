@@ -1,0 +1,48 @@
+<!DOCTYPE html> <html lang="zh"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bouncy-desk-pinball</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold">bouncy-desk-pinball</a>
+    <nav>
+      <a href="pages/game-play.html" class="mx-4 hover:text-gray-300">Game Play</a>
+      <a href="pages/settings.html" class="mx-4 hover:text-gray-300">Settings</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto my-12 px-4">
+    <section class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to bouncy-desk-pinball</h1>
+      <p class="text-gray-600 mb-8">An engaging desktop pinball game for beginners to practice programming skills.</p>
+      <a href="pages/game-play.html" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600">Start Playing</a>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <div>
+        <img src="https://source.unsplash.com/random/900x700/?pinball" alt="Pinball Game" class="rounded-md shadow-lg">
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold mb-4">About the Game</h2>
+        <p class="text-gray-600 mb-4">bouncy-desk-pinball is a fun and challenging desktop pinball game. Test your reflexes and skills as you navigate the ball through various obstacles and try to achieve the highest score.</p>
+        <a href="pages/game-play.html" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600">Play Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 px-6 mt-12">
+    <div class="container mx-auto flex justify-between items-center">
+      <p>&copy; 2023 bouncy-desk-pinball. All rights reserved.</p>
+      <nav>
+        <a href="pages/game-play.html" class="mx-4 hover:text-gray-300">Game Play</a>
+        <a href="pages/settings.html" class="mx-4 hover:text-gray-300">Settings</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body> </html>

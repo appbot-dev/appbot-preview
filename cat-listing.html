@@ -1,0 +1,57 @@
+<!DOCTYPE html> <html lang="zh"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Listing - Feline Adoption Purrfection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto Slab'] bg-gray-100">
+  <header class="bg-white shadow-md py-4 px-6 fixed top-0 left-0 right-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-gray-800">Feline Adoption Purrfection</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="cat-listing.html" class="text-gray-600 hover:text-gray-800">Cat Listing</a></li>
+          <li><a href="adoption-process.html" class="text-gray-600 hover:text-gray-800">Adoption Process</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16">
+    <section class="container mx-auto py-12">
+      <h1 class="text-4xl font-bold mb-6">Cat Listing</h1>
+      <div class="flex justify-between items-center mb-6">
+        <div class="flex items-center space-x-4">
+          <label for="breed-filter" class="text-gray-700 font-medium">Filter by Breed:</label>
+          <select id="breed-filter" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <option value="">All Breeds</option>
+          </select>
+        </div>
+        <div class="flex items-center space-x-4">
+          <label for="search-input" class="text-gray-700 font-medium">Search:</label>
+          <input type="text" id="search-input" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Search by name or breed">
+        </div>
+      </div>
+      <div id="cat-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Cats will be dynamically rendered here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 px-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <p>&copy; 2023 Feline Adoption Purrfection. All rights reserved.</p>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="cat-listing.html" class="text-gray-300 hover:text-white">Cat Listing</a></li>
+          <li><a href="adoption-process.html" class="text-gray-300 hover:text-white">Adoption Process</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="cat-listing.js"></script>
+</body> </html>

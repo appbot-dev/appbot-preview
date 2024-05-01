@@ -1,0 +1,46 @@
+<!DOCTYPE html> <html lang="zh"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold">Minesweeper Playground</div>
+    <nav>
+      <a href="../index.html" class="mx-4 hover:text-gray-300">Home</a>
+      <a href="minesweeper.html" class="mx-4 hover:text-gray-300">Minesweeper Game</a>
+      <a href="leaderboard.html" class="mx-4 hover:text-gray-300">Leaderboard</a>
+    </nav>
+  </header>
+  
+  <main class="p-8">
+    <section class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Leaderboard</h1>
+      <p class="text-gray-700">Check out the top scores and compete with other players.</p>
+      
+      <div class="mt-6">
+        <table class="w-full bg-white rounded-lg shadow-md">
+          <thead>
+            <tr class="bg-blue-500 text-white">
+              <th class="py-3 px-4 font-bold">Rank</th>
+              <th class="py-3 px-4 font-bold">Player</th>
+              <th class="py-3 px-4 font-bold">Score</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-table">
+            <!-- Leaderboard data will be populated here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-blue-500 text-white py-4 px-6 text-center">
+    &copy; 2023 Minesweeper Playground. All rights reserved.
+  </footer>
+  
+  <script src="../script.js"></script>
+</body> </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High School Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold">High School Landing Page</a>
+    <nav>
+      <a href="pages/academics.html" class="mx-4 hover:text-gray-300">Academics</a>
+      <a href="pages/student-life.html" class="mx-4 hover:text-gray-300">Student Life</a>
+    </nav>
+  </header>
+  
+  <main class="py-12 px-6">
+    <section class="mb-12">
+      <h1 class="text-4xl font-bold mb-4 text-blue-500">Welcome to Our High School</h1>
+      <p class="text-gray-600 mb-6">A static web page serving as the landing page for a high school.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <a href="pages/academics.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h2 class="text-2xl font-bold mb-2 text-blue-500">Academics</h2>
+          <p class="text-gray-600">Showcase academic programs, courses, and extracurricular activities.</p>
+        </a>
+        <a href="pages/student-life.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h2 class="text-2xl font-bold mb-2 text-blue-500">Student Life</h2>
+          <p class="text-gray-600">Highlight student clubs, events, sports teams, and campus facilities.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-blue-500 text-white py-4 px-6 text-center">
+    <p>&copy; 2023 High School Landing Page. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body> </html>

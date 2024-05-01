@@ -1,0 +1,1 @@
+// Utility functions for IndexedDB or localStorage operations // Functions to handle high score data

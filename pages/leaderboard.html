@@ -1,0 +1,49 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brick Breaker Arcade Blast - Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Brick Breaker Arcade Blast</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="../index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="game-play.html" class="hover:text-gray-300">Game Play</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="container mx-auto py-8">
+    <section class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-bold mb-4">Leaderboard</h2>
+      <p class="text-gray-700 mb-4">
+        Check out the top scores and rankings for the Brick Breaker Arcade Blast game.
+      </p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left table-auto">
+          <thead class="bg-blue-500 text-white">
+            <tr>
+              <th class="px-4 py-2">Rank</th>
+              <th class="px-4 py-2">Player</th>
+              <th class="px-4 py-2">Score</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-table">
+            <!-- Leaderboard data will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-blue-500 text-white py-4 px-6 mt-8 flex justify-between items-center">
+    <p>&copy; 2023 Brick Breaker Arcade Blast. All rights reserved.</p>
+    <p>Powered by Tailwind CSS</p>
+  </footer>
+  
+  <script src="../leaderboard.js"></script>
+</body> </html>

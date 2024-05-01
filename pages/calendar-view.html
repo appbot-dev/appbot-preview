@@ -1,0 +1,37 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar View - Tasker Simplified Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <a href="../index.html" class="text-2xl font-bold">Tasker Simplified Tracker</a>
+    <nav>
+      <a href="todo-list.html" class="mx-4 hover:text-gray-300">To-Do List</a>
+      <a href="calendar-view.html" class="mx-4 hover:text-gray-300">Calendar View</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto my-12">
+    <h2 class="text-3xl font-bold mb-6">Calendar View</h2>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div id="calendar" class="grid grid-cols-7 gap-4">
+        <!-- Calendar cells will be dynamically added here -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6 mt-12 flex justify-between items-center">
+    <p>&copy; 2023 Tasker Simplified Tracker. All rights reserved.</p>
+    <nav>
+      <a href="#" class="mx-4 hover:text-gray-300">About</a>
+      <a href="#" class="mx-4 hover:text-gray-300">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="../script.js"></script>
+</body> </html>

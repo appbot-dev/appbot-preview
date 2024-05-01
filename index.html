@@ -1,0 +1,47 @@
+<!DOCTYPE html> <html lang="en"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasker Simplified Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Tasker Simplified Tracker</h1>
+    <nav>
+      <a href="pages/todo-list.html" class="mx-4 hover:text-gray-300">To-Do List</a>
+      <a href="pages/calendar-view.html" class="mx-4 hover:text-gray-300">Calendar View</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto my-12">
+    <h2 class="text-3xl font-bold mb-6">Welcome to Tasker Simplified Tracker</h2>
+    <p class="text-lg mb-8">A user-friendly to-do list application for efficient task management.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <img src="https://source.unsplash.com/random/900x700/?task" alt="Task" class="rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mt-4">To-Do List</h3>
+        <p class="text-gray-600">Create, view, edit, and delete tasks in a simple and organized list.</p>
+        <a href="pages/todo-list.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 mt-4 inline-block">Go to To-Do List</a>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/random/900x700/?calendar" alt="Calendar" class="rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mt-4">Calendar View</h3>
+        <p class="text-gray-600">View and manage tasks in a calendar format for better time management.</p>
+        <a href="pages/calendar-view.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 mt-4 inline-block">Go to Calendar View</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6 mt-12 flex justify-between items-center">
+    <p>&copy; 2023 Tasker Simplified Tracker. All rights reserved.</p>
+    <nav>
+      <a href="#" class="mx-4 hover:text-gray-300">About</a>
+      <a href="#" class="mx-4 hover:text-gray-300">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body> </html>

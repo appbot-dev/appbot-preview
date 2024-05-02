@@ -1,0 +1,52 @@
+<!DOCTYPE html> <html lang="zh"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Mania Unleashed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto Slab'] bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
+  <header class="bg-transparent py-4 px-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Tetris Mania Unleashed</h1>
+    <nav>
+      <a href="pages/game-play.html" class="hover:text-gray-300 mr-4">Game Play</a>
+      <a href="pages/leaderboard.html" class="hover:text-gray-300">Leaderboard</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-12">
+    <section class="mb-12 text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Tetris Mania Unleashed</h2>
+      <p class="text-lg leading-relaxed">
+        An engaging web-based Tetris game designed for beginners to practice coding skills.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-4xl font-bold mb-6">Featured Games</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <a href="pages/game-play.html" class="bg-white bg-opacity-20 backdrop-blur-sm shadow-md rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/random/900x700/?tetris" alt="Tetris Game" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Tetris Game</h3>
+            <p class="text-gray-200">Play the classic Tetris game with various difficulty levels.</p>
+          </div>
+        </a>
+        <a href="pages/leaderboard.html" class="bg-white bg-opacity-20 backdrop-blur-sm shadow-md rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/random/900x700/?leaderboard" alt="Leaderboard" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Leaderboard</h3>
+            <p class="text-gray-200">Check out the global rankings and high scores.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-transparent py-4 px-6 text-center">
+    <p>&copy; 2023 Tetris Mania Unleashed. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body> </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html> <html lang="zh"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Game Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head> <body class="font-['Roboto Slab'] bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
+  <header class="bg-transparent py-4 px-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Tetris Game Play</h1>
+    <nav>
+      <a href="../index.html" class="hover:text-gray-300 mr-4">Home</a>
+      <a href="leaderboard.html" class="hover:text-gray-300">Leaderboard</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-12 flex justify-center items-center">
+    <div class="bg-white bg-opacity-20 backdrop-blur-sm shadow-md rounded-lg p-8 w-full max-w-md">
+      <h2 class="text-4xl font-bold mb-6 text-center">Play Tetris</h2>
+      <div class="mb-6">
+        <label for="difficulty" class="block mb-2 font-bold">Select Difficulty:</label>
+        <select id="difficulty" class="w-full bg-gray-200 border-none rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <button id="startGame" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">Start Game</button>
+        <button id="pauseGame" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300 ml-4">Pause Game</button>
+      </div>
+      <div id="gameContainer" class="mt-8"></div>
+    </div>
+  </main>
+
+  <footer class="bg-transparent py-4 px-6 text-center">
+    <p>&copy; 2023 Tetris Mania Unleashed. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body> </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Roboto_Slab']">
+  <header class="bg-gray-800 text-white py-4 px-6 fixed top-0 left-0 right-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold">Online Contest Management</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="contest-management.html" class="hover:text-gray-400">Contest Management</a></li>
+          <li><a href="leaderboard.html" class="hover:text-gray-400">Leaderboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="pt-20 pb-16">
+    <section class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">Leaderboard</h1>
+        <p class="text-lg text-gray-600 mb-8">Display rankings, scores, and progress of participants in ongoing contests.</p>
+      </div>
+    </section>
+    
+    <section class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Current Leaderboard</h2>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <table class="w-full table-auto">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="px-4 py-3 text-left">Rank</th>
+                <th class="px-4 py-3 text-left">Participant</th>
+                <th class="px-4 py-3 text-right">Score</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-table">
+              <!-- Leaderboard entries will be dynamically generated here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Online Contest Management. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="../script.js"></script>
+  <script>
+    // Leaderboard logic
+    async function renderLeaderboard() {
+      await openDB();
+      const contests = await getContests();
+      const leaderboardTable = document.getElementById('leaderboar

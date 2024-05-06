@@ -1,0 +1,1 @@
+{"name":"Minesweeper Playground","description":"An engaging web-based Minesweeper game for beginners to practice programming skills.","language":"Chinese","versions":[{"name":"v1","user_input":"扫雷游戏"},{"name":"v2","user_input":"生成扫雷的地图，可以点击，随机生成雷区的布局"},{"name":"v3","user_input":"修复问题：第二次点击没有效果"},{"name":"v4","user_input":"修复问题：有的时候点击扫雷的区域没有效果"}]}

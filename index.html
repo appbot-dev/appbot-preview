@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Roboto_Slab'] bg-gray-100">
+  <header class="bg-blue-500 text-white py-4 px-6 sticky top-0 z-10">
+    <nav class="flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">Minesweeper Playground</a>
+      <ul class="flex space-x-4">
+        <li><a href="pages/game.html">Game</a></li>
+        <li><a href="pages/leaderboard.html">Leaderboard</a></li>
+        <li><a href="pages/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="py-8 px-6">
+    <section class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Minesweeper Playground</h1>
+      <p class="text-lg mb-8">An engaging web-based Minesweeper game for beginners to practice programming skills.</p>
+      <a href="pages/game.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg">
+        Start Playing
+      </a>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-2xl font-bold mb-4">About the Game</h2>
+      <p class="text-lg mb-4">
+        Minesweeper is a classic logic-based game where the objective is to clear a rectangular board containing hidden mines without detonating any of them. Players reveal squares on the board, and if a square with a mine is revealed, the game ends. If no mines are revealed, a number is displayed indicating how many neighboring squares contain mines.
+      </p>
+      <p class="text-lg mb-8">
+        In this web-based version, you can practice your Minesweeper skills and compete with others on the leaderboard.
+      </p>
+      <a href="pages/about.html" class="text-blue-500 hover:underline">Learn more</a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6 mt-8">
+    <p class="text-center">&copy; 2023 Minesweeper Playground. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
